@@ -1,0 +1,51 @@
+.container {
+    width: 100vw;
+    height: 95vh;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.7fr 0.3fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "people vehicles starships films"
+        "people homeworld homeworld homeworld";
+}
+
+.vehicles {
+    grid-area: vehicles;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+}
+
+.starships {
+    grid-area: starships;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+}
+
+.films {
+    grid-area: films;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+}
+
+.people {
+    grid-area: people;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+}
+
+.homeworld {
+    grid-area: homeworld;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+}
+
+.vehicles-list,
+.starships-list,
+.films-list,
+.people-list,
+.homeworld-list {
+    margin-top: 2rem;
+}
