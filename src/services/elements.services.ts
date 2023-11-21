@@ -17,9 +17,7 @@ function createButtonElement(element: IPerson | IStarships | IVehicle | IFilm): 
     })
     return btn;
 }
-// the reason there is an export its for other pages to have access to this function(check script.ts)
-// but createButtonElement function is being used just by createElementList(and its on the same page)
-export function createElementList(elements: IPerson[] | IStarships[] | IVehicle[] | IFilm[]): HTMLDivElement {
+export function createElementList(elements: IPerson[] | IStarships[] | IVehicle[] | IFilm[]) {
     const div = document.createElement('div');
     div.classList.add('list-group');
     elements.forEach((element: IPerson | IStarships | IVehicle | IFilm) => {

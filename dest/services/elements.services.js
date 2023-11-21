@@ -13,8 +13,6 @@ function createButtonElement(element) {
     });
     return btn;
 }
-// the reason there is an export its for other pages to have access to this function(check script.ts)
-// but createButtonElement function is being used just by createElementList(and its on the same page)
 export function createElementList(elements) {
     const div = document.createElement('div');
     div.classList.add('list-group');
